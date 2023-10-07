@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AYURSARATHI</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+  <!--navbar-->
+  <header
+    class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+    <div class="col-md-3 mb-2 mb-md-0">
+      <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+        <img class="bi" width="90" height="74" role="img" aria-label="Bootstrap" src="ayush5.jpg" alt="">
+
+      </a>
+    </div>
+
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+      <li><a href="#" class="nav-link px-2 text-secondary-emphasis"><b>Home</b></a></li>
+      <li><a href="/aboutayurveda.html" class="nav-link px-2 text-secondary">About Ayurveda</a></li>
+      <li><a href="/servicetreatment.html" class="nav-link px-2 text-secondary">Service Treatment</a></li>
+      <li><a href="/product.html" class="nav-link px-2 text-secondary">Products</a></li>
+      <li><a href="/courses.html" class="nav-link px-2 text-secondary">Courses</a></li>
+      <li><a href="/contact.html" class="nav-link px-2 text-secondary">Contact Us</a></li>
+    </ul>
+
+    <div class="col-md-3 text-end">
+
+      <button type="button" class="btn btn-outline-success me-2" data-bs-toggle="modal"
+        data-bs-target="#LoginModal">Login</button>
+      <button type="button" class="btn btn-outline-success me-2" data-bs-toggle="modal"
+        data-bs-target="#SignupModal">Sign-up</button>
+    </div>
+  </header>
+
+  <!--login modal-->
+
+
+  <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" style="display: none;"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="LoginModalLabel">Login to AYURSARTHI</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="input-group">
+              <span class="input-group-text">First and last name</span>
+              <input type="text" aria-label="First name" class="form-control">
+              <input type="text" aria-label="Last name" class="form-control">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--signup modal-->
+  <div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="SignupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="SignupModalLabel">Get an Account</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Name</label>
+              <input type="data" class="form-control" id="exampleInputPassword1">
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            
+
+
+            <button type="submit" class="btn btn-primary">Create Account</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Corousal for Sliders-->
+  <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2500">
+        
+        <img src="slider1.jpg"  class="d-block w-100" alt="..." height="700">
+
+      </div>
+
+      <div class="carousel-item rounded-md" data-bs-interval="2500">
+
+        <img src="slider2a.jpg" class="d-block w-100" alt="..." height="700">
+
+
+      </div>
+      <div class="carousel-item" data-bs-interval="2500">
+        <img src="slider3a.jpg" class="d-block w-100" alt="..." height="700">
+      </div>
+      <div class="carousel-item" data-bs-interval="2500">
+        <img src="Screenshot 2023-10-01 062751.png" class="d-block w-100" alt="..." height="700">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!--after Corousal for description-->
+  <div class="px-4 py-5 my-5 text-center">
+
+    <h6>AYURSARTHI - WORLD'S LEADING AYURVEDA COMPANY</h6>
+    <h2 class=" display-5 fw-bold text-warning " style="--bs-text-opacity: .5;">EXPLORE THE WORLD OF AYURVEDA</h2>
+    <div class="col-lg-6 mx-auto">
+
+      <p class="lead mb-4 fs-6">We know it’s not easy to stay healthy in a world like ours. It means eating the right
+        things, taking time off, and putting in the hours. It means living in harmony with your mind, body, and soul.
+        Our hope is to make this path to wellness easier with a little help from our <b class="text-primary"> Ayurvedic
+          products.</b>
+
+        <br>There’s a lot that goes into a AYURSARTHI product. It begins with extensive research that can take months or
+        even years. We then gather the best ingredients by tapping the vast goodness of nature. There’s a lot of trial
+        and a whole lot of effort until we finally find a formula that truly works for you. This is what keeps us going
+        every day.</br>
+      </p>
+    </div>
+
+
+
+    <!--numbers-->
+    <div class="row g-6 g-lg-20 my-10">
+      <div class="col-md-4">
+        <div class="card shadow-none border-0">
+          <div class="card-body p-7">
+            <div class="mt-4 mb-7">
+
+            </div>
+            <div class="pt-2 pb-3">
+              <h5 class="h3 font-display fw-bold mb-3 text-warning">250+</h5>
+
+              <p class=" fs-3 ">AYURVEDIC PRODUCTS</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-none border-0">
+          <div class="card-body p-7">
+            <div class="mt-4 mb-7">
+
+            </div>
+            <div class="pt-2 pb-3">
+              <h5 class="h3 font-display fw-bold mb-3 text-warning">138</h5>
+              <p class="text-muted fs-3 ">YEARS OF LEGACY AND QUALITY EXPERIENCE</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <div class="card shadow-none border-0">
+          <div class="card-body p-7">
+            <div class="mt-4 mb-7">
+
+            </div>
+            <div class="pt-2 pb-3">
+              <h5 class="h3 font-display fw-bold mb-3 text-warning">6.9</h5>
+              <p class="text-muted fs-3 ">MILLION RETAIL OUTLETS</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <center><button type="button" class="btn btn-warning text-white"><b>Know Our Story</b></button></center>
+
+
+    <div class="container my-4">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active" _mstvisible="0">
+          <img src="bg2.png" alt="" class="bd-placeholder-img" width="100%" height="500">
+
+          <div class="container" _mstvisible="1">
+            <div class="carousel-caption" _mstvisible="2">
+
+              <h5 _msttexthash="635050" _msthash="19" _mstvisible="3" class="text-black" style="direction: ltr;">WHAT WE
+                DO</h5>
+              <h1>
+                <p class="text-success"><b>
+                    Ancient Ayurveda met modern science. And together they went and built a legacy.
+                  </b>
+                </p>
+              </h1>
+              <p _msttexthash="16689023" _msthash="20" _mstvisible="3" class="text-black" style="direction: ltr  ;">
+                Gathering the choicest, natural ingredients is important. But you also need to know how to blend them to
+                create a quality health product. That’s why we rely on the traditional knowledge of Ayurveda and the
+                expertise of modern-day science. And quite honestly, it’s the very foundation of everything we’ve built
+                ever since.
+
+              </p>
+              <p _mstvisible="3"><a class="btn btn-outline-success" href="https://ayurvedalibrary.org/"
+                  _msttexthash="135525" _msthash="21" _mstvisible="4" style="direction: ltr;">Explore Ayurveda</a></p>
+
+
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- end -->
+
+
+
+    <!--new end2-->
+
+    <div class="container my-5">
+
+      <footer class="text-white text-center text-lg-start" style="background-color: #23242a;">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!--Grid row-->
+          <div class="row mt-4">
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4">About company</h5>
+
+              <p>Our Ayurveda website is a dedicated platform rooted in ancient Indian traditions, offering a wealth of knowledge and products that harness the power of nature for holistic well-being. We believe in the purity and authenticity of Ayurveda, with our offerings comprising entirely natural and pure remedies. Explore our website to discover time-tested Ayurvedic practices and products that promote balance, health, and harmony in your life."
+
+              </p>
+
+             
+
+              <div class="mt-4">
+                <!-- Facebook -->
+                <i class="bi bi-facebook text-warning"></i>
+                <!-- Dribbble -->
+                <i class="bi bi-instagram text-warning"></i>
+                <!-- Twitter -->
+                <i class="bi bi-twitter text-warning"></i>
+                <!-- Google + -->
+                <i class="bi bi-linkedin text-warning"></i>
+                <!-- Linkedin -->
+              </div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
+
+              <div class="form-outline form-white mb-4">
+                <input type="text" id="formControlLg" class="form-control form-control-lg">
+                <center><label class="form-label" for="formControlLg" style="margin-left: 0px;">Search</label></center>
+                <div class="form-notch">
+                  <div class="form-notch-leading" style="width: 9px;"></div>
+                  <div class="form-notch-middle" style="width: 48.8px;"></div>
+                  <div class="form-notch-trailing"></div>
+                </div>
+              </div>
+
+              <ul class="fa-ul" style="margin-left: 1.65em;">
+                <li class="mb-3">
+                  <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Punjab,India, 142022</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">ayush123@example.com</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 01 234 567 88</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">+ 01 234 567 89</span>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4">Opening hours</h5>
+
+              <table class="table text-center text-white">
+                <tbody class="font-weight-normal">
+                  <tr>
+                    <td>Mon - Thu:</td>
+                    <td>8am - 9pm</td>
+                  </tr>
+                  <tr>
+                    <td>Fri - Sat:</td>
+                    <td>8am - 1am</td>
+                  </tr>
+                  <tr>
+                    <td>Sunday:</td>
+                    <td>9am - 10pm</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2020 Copyright
+         
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+    </div>
+    <!-- End of .container -->
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
